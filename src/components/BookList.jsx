@@ -1,18 +1,14 @@
-import { Link } from "react-router";
+import BookItem from "./BookItem";
+import books from "../json/books.json"
 
 function BookList() {
     return (
-        <>
-        <section className="grid gap-6">
-            <div className="bg-base-300 shadow-xl p-4 m-2">
-                <Link to="/">
-                    <img className="w-full" src="./src/images/book1.png" alt="The Great Gatsby" />
-                    <h2 className="text-base-content text-lg font-bold">Book Title</h2>
-                    <p className="text-base-content">Author: John Doe</p>
-                </Link>
-            </div>
-        </section>
-        </>
+        <main className="main grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 mx-[20%]">
+            {books.map((item) => (
+                <BookItem key={item.ID} item={item} />
+            ))}
+        </main>
+
     );
 }
 
