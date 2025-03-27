@@ -1,10 +1,8 @@
-function Footer(){
-    return(
-        <footer className="footer flex flex-col text-center items-center">
-            <div className="flex justify-center w-[100%] mt-6">
-                <hr className="my-[25px] w-[100%] border-t-4 border-[#3e3f97] rounded"/>
-            </div>
-            <p>Copyright.</p>
+function Footer() {
+    return (
+        <footer className="footer text-center items-center">
+            <hr className="mt-[1rem] w-[100%] border-t-4 border-base-300 rounded" />
+            <p className="justify-center w-[100%] mb-6">Copyright.</p>
         </footer>
     );
 }
