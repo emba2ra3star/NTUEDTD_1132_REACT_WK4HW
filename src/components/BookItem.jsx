@@ -4,7 +4,7 @@ function BookItem({ item }) {
     return (
         <section key={item.ID} className="grid gap-6">
             <div className="bg-base-300 shadow-xl p-4 m-2">
-                <img className="w-full" src={"/src" + item.cover} alt={item.title} />
+                <img className="w-full" src={item.cover} alt={item.title} />
                 <div className="flex flex-col gap-2 p-4 text-left text-base-content">
                     <h2 className="text-lg font-bold">{item.title}</h2>
                     <p className="text-gray-500">Author: {item.author}</p>
